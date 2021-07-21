@@ -1,4 +1,4 @@
-import { Index } from "../views/Index";
+import { Index } from "../views/Index/Index";
 import { MyHead as Head } from "../components/Head/Head";
 
 export async function getServerSideProps() {
