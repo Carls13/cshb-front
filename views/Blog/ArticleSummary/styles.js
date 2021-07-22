@@ -9,12 +9,14 @@ export const Container = styled.div`
     box-shadow: 1px 2px 10px 5px rgba(0, 0, 0, 0.4);
     background-color: #ffffff22;
     margin: 15px 0;
+    gap: 50px;
 
     &:hover {
         background-color: #ffffff44;
     }
 
     @media (max-width: 800px) {
+        gap: 30px;
         display: flex;
         flex-direction: column;
     }

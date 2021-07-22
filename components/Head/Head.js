@@ -7,8 +7,8 @@ export const MyHead = ({ title }) => {
             <link rel="icon" href="/logo-white.png" />
             <meta property="og:title" content="Carlos Hernández" />
             <meta property="og:url" content="carlosshb.com" />
-            <meta property="og:description" content="Página web de Carlos Hernández, desarrollador web." />
-            <meta property="og:image" content="/favicon.ico" />
+            <meta property="og:description" content="Sitio personal de Carlos Hernández, Desarrollador Web." />
+            <meta property="og:image" content="/logo-black.png" />
             <meta property="og:type" content="website" />
             <meta property="og:locale" content="es_ES" />
             <link rel="preconnect" href="https://fonts.googleapis.com" />

@@ -14,6 +14,7 @@ export const GridContainer = styled.div`
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 25px;
     row-gap: 20px;
+    margin: 30px 0;
 
     div:nth-child(1) {
         grid-column: 1 / span 2;

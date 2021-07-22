@@ -8,6 +8,10 @@ export const HeaderContainer = styled.header`
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
+
+    @media (max-width: 800px) {
+        padding: 10px;
+    }
 `;
 
 export const LogoContainer = styled.div`

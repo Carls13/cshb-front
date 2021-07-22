@@ -28,12 +28,21 @@ export const Column = styled.div`
     p { 
         width: 80%;
         margin: 0 10%;
+
+        @media (max-width: 800px) {
+            width: 100%;
+            margin: unset;
+        }
      }
 `;
 
 export const Image = styled.img`
     display: block;
-    width: 60%;
+    width: 80%;
     margin: auto;
     border-radius: 10px; 
+
+    @media (max-width: 800px) {
+        width: 100%;
+    }
 `;

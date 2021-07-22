@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { columnContainer, pageDescription, rowContainer, section, sectionTitle } from "../../../theme/commonStyles";
+import { columnContainer, section, sectionTitle } from "../../theme/commonStyles";
 
 export const Container = styled.div`
     ${section};
@@ -7,17 +7,6 @@ export const Container = styled.div`
 
 export const Title = styled.h1`
     ${sectionTitle};
-`;
-
-export const Description = styled.p`
-    ${pageDescription};
-    width: 60%;
-    margin: auto;
-`;
-
-export const Row = styled.div`
-    ${rowContainer};
-    margin: 15px 0;
 `;
 
 export const Column = styled.div`

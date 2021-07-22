@@ -32,6 +32,13 @@ export const Image = styled.img`
 
 export const Paragraph = styled.p`
     ${paragraph};
+    width: 80%;
+    font-size: 24px;
+    margin: 10px auto;
+
+    @media (max-width: 800px) {
+        width: 100%;
+    }
 `;
 
 export const Form = styled.form`

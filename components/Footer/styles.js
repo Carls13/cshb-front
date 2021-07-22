@@ -33,8 +33,13 @@ export const Logo = styled.img`
 
 export const LinksContainer = styled.div`
     display: flex;
-    gap: 20px;
+    gap: 10px;
     width: auto;
+
+    @media (max-width: 800px) {
+        flex-direction: column;
+        text-align: center;
+    }
 `;
 
 export const Option = styled.span`
@@ -42,6 +47,12 @@ export const Option = styled.span`
     color: white;
     font-weight: bold;
     font-size: 18px;
+    padding: 10px;
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+    }
 `;
 
 export const SocialMediaContainer = styled.div`

@@ -21,7 +21,9 @@ export const Header = () => {
                 <Option>
                     <Link prefetch href="/">Inicio</Link>
                 </Option>
-                <Option>Conóceme</Option>
+                <Option>
+                    <Link prefetch href="/about">Conóceme</Link>
+                </Option>
                 <Option>
                     <Link prefetch href="/portfolio">Portafolio</Link>
                 </Option>

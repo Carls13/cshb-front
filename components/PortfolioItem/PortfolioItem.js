@@ -16,7 +16,7 @@ export const PortfolioItem = ({ portfolioItem }) => {
     const handleItemClick = () => {
         const slug = title.replace(" ", "-").toLowerCase();
 
-        router.push("/portfolio/" + slug);
+        router.push("/portfolio/" + slug).then(() => window.scrollTo(0, 0));
     }
 
     return (

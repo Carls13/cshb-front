@@ -16,7 +16,7 @@ export const Presentation = () => {
         <Container>
             <Title>¡Bienvenido!</Title>
             <Description>Este es el sitio web personal de Carlos Hernández, Desarrollador Web con
-            3+ años de experiencia residenciado en Valencia, Venezuela. Quédate para que puedas
+                3+ años de experiencia residenciado en Valencia, Venezuela. Quédate para que puedas
                 conocerme un poco más, leerme y ver mi trabajo😁</Description>
             <Row>
                 <Column>
@@ -25,9 +25,9 @@ export const Presentation = () => {
                 <Column>
                     <Paragraph>
                         Todo comenzó hace {new Date().getFullYear() - 2016} años, cuando vi en la Universidad
-                    la materia <b>Computación I</b>. Ahí fue mi primer contacto con la programación. Me
-                    gustaba resolver todo tipo de problemas planteados a través del código (en ese entonces
-                    veíamos Visual Basic💀).
+                        la materia <b>Computación I</b>. Ahí fue mi primer contacto con la programación. Me
+                        gustaba resolver todo tipo de problemas planteados a través del código (en ese entonces
+                        veíamos Visual Basic💀).
                     </Paragraph>
                     <Paragraph>
                         A partir de allí, empecé a profundizar un poco más de lo que ví en la Universidad.
@@ -36,8 +36,7 @@ export const Presentation = () => {
                     </Paragraph>
                     <Paragraph>
                         Pasé un buen tiempo saltando de un lenguaje de programación a otro, sin saber realmente a qué
-                        rama me quería dedicar😱😱. Hasta que, a raíz de ser contratado por una pequeña empresa, me vi forzado
-                        a aprender <b>Desarrollo Web</b>, tanto Backend como Frontend. Allí me di cuenta que me gustaba tanto
+                        rama me quería dedicar😱😱. Hasta que, a raíz de ser contratado por una pequeña empresa, comencé a aprender <b>Desarrollo Web</b>, tanto Backend como Frontend. Allí me di cuenta que me gustaba tanto
                         interactuar con las base de datos, como crear productos interactivos con los usuarios.
                     </Paragraph>
                     <Paragraph>
