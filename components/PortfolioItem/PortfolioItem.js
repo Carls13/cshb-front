@@ -24,7 +24,7 @@ export const PortfolioItem = ({ portfolioItem }) => {
             <Image src={preview} alt={title} title={title} loading="lazy" />
             <Title>{title}</Title>
             <Description>{description.split(".")[0]}</Description>
-            <PortfolioLink href={link} target="_blank">Visitar sitio</PortfolioLink>
+            <PortfolioLink>Ver más</PortfolioLink>
         </Card>
     );
 };

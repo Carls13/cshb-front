@@ -8,8 +8,20 @@ import {
 } from './styles';
 
 import Link from 'next/link';
+import { useEffect, useState } from 'react';
 
 export const Header = () => {
+    const [showMenu, setShowMenu] = useState(false);
+
+    const handleLinkClick = () => {
+        if (window.screen.width >= 800) return;
+
+        setShowMenu(false);
+    };
+
+    useEffect(() => {
+    }, [showMenu])
+
     return (
         <HeaderContainer>
             <LogoContainer>
@@ -17,7 +29,7 @@ export const Header = () => {
                     <Logo src="/logo-white.png" alt="Carlos Hernández Logo" />
                 </Link>
             </LogoContainer>
-            <OptionsContainer>
+            <OptionsContainer onClick={handleLinkClick} showMenu={showMenu}>
                 <Option>
                     <Link prefetch href="/">Inicio</Link>
                 </Option>
@@ -35,7 +47,7 @@ export const Header = () => {
                 </Option>
             </OptionsContainer>
             <IconsContainer>
-                📸
+                <img src="/burger-menu.svg" alt="" onClick={() => setShowMenu(!showMenu)}/>
             </IconsContainer>
         </HeaderContainer>
     )

@@ -35,19 +35,19 @@ export const Footer = () => {
                 </Option>
             </LinksContainer>
             <SocialMediaContainer>
-                <SocialMedia>
+                <SocialMedia target="_blank" src="https://www.instagram.com/carlosshb98/">
                     <i className="fab fa-instagram"></i>
                 </SocialMedia>
-                <SocialMedia>
+                <SocialMedia target="_blank" src="https://twitter.com/fromcarlostoyou">
                     <i className="fab fa-twitter"></i>
                 </SocialMedia>
-                <SocialMedia>
+                <SocialMedia target="_blank" src="https://www.linkedin.com/in/fromcarlostoyou">
                     <i className="fab fa-linkedin"></i>
                 </SocialMedia>
             </SocialMediaContainer>
             <Copyright>
-                © {new Date().getFullYear()}. Carlos Hernández. All rights reserved.
-                </Copyright>
+                © {new Date().getFullYear()}. Carlos Hernández. Todos los derechos reservados.
+            </Copyright>
         </FooterContainer>
     )
 }

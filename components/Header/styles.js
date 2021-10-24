@@ -1,4 +1,14 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+const appearingMenu = keyframes`
+    from {
+        left: -150vw;
+    }
+
+    to {
+        left: 2.5vw;
+    }
+`;
 
 export const HeaderContainer = styled.header`
     height: auto;
@@ -30,7 +40,23 @@ export const OptionsContainer = styled.div`
     width: auto;
 
     @media (max-width: 800px) {
-        display: none;
+        display: ${props => props.showMenu ? 'flex' : 'none'};
+        position: absolute;
+        top: 0;
+        left: 2.5vw;
+        animation-name: ${appearingMenu};
+        animation-duration: 0.5s;
+        bottom: 0;
+        width: 100vw;
+        margin: 0;
+        height: 100vh;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        background-color: #000000cc;
+        margin-left: -10px;
+        overflow-y: hidden;
     }
 `;
 
@@ -53,5 +79,9 @@ export const IconsContainer = styled.div`
 
     @media (max-width: 800px) {
         display: flex;
+
+        img {
+            z-index: 10;
+        }
     }
 `;

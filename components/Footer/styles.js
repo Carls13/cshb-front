@@ -73,4 +73,5 @@ export const SocialMedia = styled.a`
 export const Copyright = styled.span`
     font-size: 22px;
     color: white;
+    text-align: center;
 `;
