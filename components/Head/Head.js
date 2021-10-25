@@ -18,6 +18,16 @@ export const MyHead = ({ title }) => {
                 rel="stylesheet"
                 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
             />
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156750484-1"></script>
+            <script dangerouslySetInnerHTML={{
+                __html: `
+                 window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-156750484-1');
+            `    }}
+            />
         </Head>
     )
 };
