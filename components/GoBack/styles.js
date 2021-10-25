@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.article`
+export const Container = styled.section`
     margin: 15px 0;
 `;
 
