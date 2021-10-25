@@ -21,7 +21,7 @@ export const Image = styled.img`
     margin: 0 auto 20px auto;
 `;
 
-export const Title = styled.h3`
+export const Title = styled.h4`
     color: white;
     font-size: 35px;
     font-weight: bold;
