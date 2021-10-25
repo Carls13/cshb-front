@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Card = styled.div`
+export const Card = styled.article`
     cursor: pointer;
     display: flex;
     flex-direction: column;
@@ -37,7 +37,7 @@ export const Description = styled.p`
     margin: 0 10% 10px 10%; 
 `;
 
-export const PortfolioLink = styled.a`
+export const PortfolioLink = styled.span`
     color: white;
     font-size: 25px;
     font-weight: bold;

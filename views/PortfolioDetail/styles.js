@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { pageDescription, section, sectionTitle } from "../../theme/commonStyles";
 
-export const Container = styled.div`
+export const Container = styled.article`
     ${section};
 `;
 

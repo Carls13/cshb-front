@@ -9,7 +9,7 @@ import {
 import { useRouter } from 'next/router';
 
 export const PortfolioItem = ({ portfolioItem }) => {
-    const { description, link, preview, title } = portfolioItem;
+    const { description, preview, title } = portfolioItem;
 
     const router = useRouter();
 
