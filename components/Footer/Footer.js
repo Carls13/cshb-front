@@ -35,13 +35,13 @@ export const Footer = () => {
                 </Option>
             </LinksContainer>
             <SocialMediaContainer>
-                <SocialMedia target="_blank" src="https://www.instagram.com/carlosshb98/">
+                <SocialMedia target="_blank" href="https://www.instagram.com/carlosshb98/">
                     <i className="fab fa-instagram"></i>
                 </SocialMedia>
-                <SocialMedia target="_blank" src="https://twitter.com/fromcarlostoyou">
+                <SocialMedia target="_blank" href="https://twitter.com/fromcarlostoyou">
                     <i className="fab fa-twitter"></i>
                 </SocialMedia>
-                <SocialMedia target="_blank" src="https://www.linkedin.com/in/fromcarlostoyou">
+                <SocialMedia target="_blank" href="https://www.linkedin.com/in/fromcarlostoyou">
                     <i className="fab fa-linkedin"></i>
                 </SocialMedia>
             </SocialMediaContainer>
