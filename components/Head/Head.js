@@ -1,8 +1,10 @@
 import Head from 'next/head';
 
-export const MyHead = ({ title, description }) => {
+export const MyHead = ({ title, description, image }) => {
     const metaDescription = description || "Sitio personal de Carlos Hernández, Desarrollador Web.";
     const metaTitle = `${title} | Carlos Hernández`;
+    const metaImage = image || "/carlos-home.jpg";
+    
     return (
         <Head>
             <title>{metaTitle}</title>
@@ -11,7 +13,7 @@ export const MyHead = ({ title, description }) => {
             <meta property="og:title" content={metaTitle} />
             <meta property="og:url" content="carlosshb.com" />
             <meta property="og:description" content={metaDescription} />
-            <meta property="og:image" content="/carlos-about.jpg" />
+            <meta property="og:image" content={metaImage} />
             <meta property="og:type" content="website" />
             <meta property="og:locale" content="es_ES" />
             <meta name="description" content={metaDescription}/>

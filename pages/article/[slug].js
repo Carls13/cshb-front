@@ -18,7 +18,7 @@ export default function Portfolio(props) {
     const { content, title } = article;
     return (
         <>
-            <Head title={title} description={content.split('.')[0]} />
+            <Head title={title} description={content.split('.')[0]} image="/desktop.svg" />
             <ArticleView article={props?.article} />
         </>
     );
