@@ -3,7 +3,7 @@ import { MyHead as Head } from "../../components/Head/Head";
 
 export async function getServerSideProps() {
     // Fetch data from external API
-    const res = await fetch(`https://carlosshb-api.vercel.app/portfolio/`);
+    const res = await fetch(`https://api.carlosshb.com/portfolio/`);
     const data = await res.json();
 
     // Pass data to the page via props

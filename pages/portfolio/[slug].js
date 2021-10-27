@@ -7,7 +7,7 @@ export async function getServerSideProps(context) {
     const normalizedSlug = slug.normalize("NFD").replace(/[\u0300-\u036f]/g, "")
 
     // Fetch data from external API
-    const res = await fetch(`https://carlosshb-api.vercel.app/portfolio/${normalizedSlug}`);
+    const res = await fetch(`https://api.carlosshb.com/portfolio/${normalizedSlug}`);
     const data = await res.json();
 
     // Pass data to the page via props

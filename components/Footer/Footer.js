@@ -21,17 +21,17 @@ export const Footer = () => {
             </LogoContainer>
             <LinksContainer>
                 <Option>
-                    <Link prefetch href="/">Inicio</Link>
+                    <Link href="/">Inicio</Link>
                 </Option>
                 <Option>Conóceme</Option>
                 <Option>
-                    <Link prefetch href="/portfolio">Portafolio</Link>
+                    <Link href="/portfolio">Portafolio</Link>
                 </Option>
                 <Option>
-                    <Link prefetch href="/blog">Blog</Link>
+                    <Link href="/blog">Blog</Link>
                 </Option>
                 <Option>
-                    <Link prefetch href="/contact">Contacto</Link>
+                    <Link href="/contact">Contacto</Link>
                 </Option>
             </LinksContainer>
             <SocialMediaContainer>

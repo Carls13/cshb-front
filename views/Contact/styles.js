@@ -62,7 +62,7 @@ export const Label = styled.label`
 
 export const Input = styled.input`
     width: 100%;
-    border: 1px solid black;
+    border: 2px solid ${props => props.error ? "#E6565C" : "black"};
     padding: 15px;
     height: 40px;
     text-align: left;
@@ -82,7 +82,7 @@ export const Input = styled.input`
 
 export const TextArea = styled.textarea`
     width: 100%;
-    border: 1px solid black;
+    border: 2px solid ${props => props.error ? "#E6565C" : "black"};
     padding: 15px;
     height: 150px;
     resize: none;
@@ -102,7 +102,7 @@ export const TextArea = styled.textarea`
 `;
 
 export const ErrorSpan = styled.span`
-    color: red;
+    color: #E6565C;
     font-size: 20px;
     font-weight: bold;
     text-align: center;

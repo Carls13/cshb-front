@@ -1,18 +1,20 @@
 import Head from 'next/head';
 
-export const MyHead = ({ title }) => {
+export const MyHead = ({ title, description }) => {
+    const metaDescription = description || "Sitio personal de Carlos Hernández, Desarrollador Web.";
+    const metaTitle = `${title} | Carlos Hernández`;
     return (
         <Head>
-            <title>Carlos Hernández | {title}</title>
+            <title>{metaTitle}</title>
             <html lang="es"/>
             <link rel="icon" href="/logo-white.png" />
-            <meta property="og:title" content="Carlos Hernández" />
+            <meta property="og:title" content={metaTitle} />
             <meta property="og:url" content="carlosshb.com" />
-            <meta property="og:description" content="Sitio personal de Carlos Hernández, Desarrollador Web." />
+            <meta property="og:description" content={metaDescription} />
             <meta property="og:image" content="/logo-black.png" />
             <meta property="og:type" content="website" />
             <meta property="og:locale" content="es_ES" />
-            <meta name="description" content="Sitio personal de Carlos Hernández, Desarrollador Web."/>
+            <meta name="description" content={metaDescription}/>
             <link rel="preconnect" href="https://fonts.googleapis.com" />
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
             <link defer href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />

@@ -31,19 +31,19 @@ export const Header = () => {
             </LogoContainer>
             <OptionsContainer onClick={handleLinkClick} showMenu={showMenu}>
                 <Option>
-                    <Link prefetch href="/">Inicio</Link>
+                    <Link href="/">Inicio</Link>
                 </Option>
                 <Option>
-                    <Link prefetch href="/about">Conóceme</Link>
+                    <Link href="/about">Conóceme</Link>
                 </Option>
                 <Option>
-                    <Link prefetch href="/portfolio">Portafolio</Link>
+                    <Link href="/portfolio">Portafolio</Link>
                 </Option>
                 <Option>
-                    <Link prefetch href="/blog">Blog</Link>
+                    <Link href="/blog">Blog</Link>
                 </Option>
                 <Option>
-                    <Link prefetch href="/contact">Contacto</Link>
+                    <Link href="/contact">Contacto</Link>
                 </Option>
             </OptionsContainer>
             <IconsContainer>

@@ -34,12 +34,7 @@ export const ContactView = () => {
         subject: "",
         message: ""
     });
-    const [errors, setErrors] = useState({
-        name: null,
-        email: null,
-        subject: null,
-        message: null
-    });
+    const [showValidationErrors, setShowValidationErrors] = useState(false);
 
     useEffect(() => {
         const { asunto, mensaje } = router.query;
@@ -68,9 +63,17 @@ export const ContactView = () => {
 
     const handleSubmit = e => {
         e.preventDefault();
+        setShowValidationErrors(false);
+
+        if (!name || !email || !subject || !message) {
+            setShowValidationErrors(true);
+            return;
+        };
+
+        e.preventDefault();
         setLoading(true);
 
-        axios.post("https://carlosshb-api.vercel.app/contact", data)
+        axios.post("https://api.carlosshb.com/contact", data)
             .then((response) => {
                 setSuccess(true);
             })
@@ -122,8 +125,8 @@ export const ContactView = () => {
                                     value={name}
                                     onChange={handleChange}
                                     placeholder="Nombre"
-                                    error={errors.name} />
-                                {errors.name && <ErrorSpan>{errors.name}</ErrorSpan>}
+                                    error={(name === "") && showValidationErrors} />
+                                {(!name && showValidationErrors) && <ErrorSpan>Por favor, ingresa tu nombre</ErrorSpan>}
                             </InputContainer>
                             <InputContainer>
                                 <Label htmlFor="email">Correo</Label>
@@ -132,8 +135,8 @@ export const ContactView = () => {
                                     value={email}
                                     onChange={handleChange}
                                     placeholder="Correo"
-                                    error={errors.email} />
-                                {errors.email && <ErrorSpan>{errors.email}</ErrorSpan>}
+                                    error={(email === "") && showValidationErrors} />
+                                {(!email && showValidationErrors) && <ErrorSpan>Por favor, ingresa tu correo</ErrorSpan>}
                             </InputContainer>
                             <InputContainer>
                                 <Label htmlFor="subject">Asunto</Label>
@@ -142,8 +145,8 @@ export const ContactView = () => {
                                     value={subject}
                                     onChange={handleChange}
                                     placeholder="Asunto"
-                                    error={errors.subject} />
-                                {errors.subject && <ErrorSpan>{errors.subject}</ErrorSpan>}
+                                    error={(subject === "") && showValidationErrors} />
+                                {(!subject && showValidationErrors) && <ErrorSpan>Por favor, ingresa el asunto</ErrorSpan>}
                             </InputContainer>
                             <InputContainer>
                                 <Label htmlFor="message">Mensaje</Label>
@@ -152,8 +155,8 @@ export const ContactView = () => {
                                     value={message}
                                     onChange={handleChange}
                                     placeholder="Mensaje"
-                                    error={errors.message} />
-                                {errors.message && <ErrorSpan>{errors.message}</ErrorSpan>}
+                                    error={(message === "") && showValidationErrors} />
+                                {(!message && showValidationErrors) && <ErrorSpan>Por favor, ingresa el mensaje</ErrorSpan>}
                             </InputContainer>
                             {
                                 loading ? <Spinner /> : <Button type="submit">Enviar</Button>

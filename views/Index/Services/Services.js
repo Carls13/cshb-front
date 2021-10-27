@@ -29,7 +29,7 @@ export const Services = () => {
                     </Paragraph>
                 </Column>
             </Row>
-            <Row>
+            <Row mobileReverse>
                 <Column>
                     <ColumnTitle>Diseño responsivo📱</ColumnTitle>
                     <Paragraph>
@@ -53,7 +53,7 @@ export const Services = () => {
                     </Paragraph>
                 </Column>
             </Row>
-            <Row>
+            <Row mobileReverse>
                 <Column>
                     <ColumnTitle>Optimización para motores de búsqueda🔎</ColumnTitle>
                     <Paragraph>

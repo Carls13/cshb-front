@@ -1,11 +1,14 @@
 import { Layout } from "../components/Layout/Layout";
+import { Spinner } from "../components/Spinner/Spinner";
+import { useRouterLoading } from "../hooks/useRouterLoading";
 
 function MyApp({ Component, pageProps }) {
+    const loadingPage = useRouterLoading();
     return (
         <Layout>
-            <Component {...pageProps} />
+            {loadingPage ? <Spinner/> : <Component {...pageProps} />}
         </Layout>
     );
 };
 
-export default MyApp
+export default MyApp;

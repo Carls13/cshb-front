@@ -16,43 +16,43 @@ export const GridContainer = styled.div`
     row-gap: 20px;
     margin: 30px 0;
 
-    div:nth-child(1) {
+    article:nth-child(1) {
         grid-column: 1 / span 2;
         background-color: hsl(183, 100%, 36%);
     }
 
-    div:nth-child(1) h2,
-    div:nth-child(2) h2,
-    div:nth-child(4) h2 {
+    article:nth-child(1) h2,
+    article:nth-child(2) h2,
+    article:nth-child(4) h2 {
         color: rgba(255, 255, 255, 1);
     }
 
-    div:nth-child(2) {
+    article:nth-child(2) {
         background-color: hsl(34, 41%, 61%);
     }
       
-    div:nth-child(3) {
+    article:nth-child(3) {
         grid-row: 2;
         color: white;
         background-color: #6c63ff;
     }
       
-    div:nth-child(4) {
+    article:nth-child(4) {
         grid-row: 2;
         grid-column: 2 / span 2;
         background-color: hsl(198, 45%, 29%);
     }
     
-    div:nth-child(5) {
+    article:nth-child(5) {
         grid-column: 4;
         grid-row: 1 / span 2;
         color: white;
         background-color: #6c63ff;
     }
     
-    div:nth-child(1),
-    div:nth-child(2),
-    div:nth-child(4) {
+    article:nth-child(1),
+    article:nth-child(2),
+    article:nth-child(4) {
         color: white;
     }
 

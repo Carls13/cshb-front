@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { columnContainer, pageDescription, rowContainer, section, sectionTitle } from "../../../theme/commonStyles";
 
 export const Container = styled.section`
@@ -16,6 +16,10 @@ export const Description = styled.p`
 export const Row = styled.div`
     ${rowContainer};
     margin: 20px 0;
+
+    @media (max-width: 800px) {
+        ${props => props.mobileReverse ? css`flex-direction: column-reverse` : null};
+    }
 `;
 
 export const Column = styled.div`
@@ -38,7 +42,7 @@ export const Column = styled.div`
 
 export const Image = styled.img`
     display: block;
-    width: 80%;
+    width: 50%;
     margin: auto;
     border-radius: 10px; 
 

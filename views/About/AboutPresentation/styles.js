@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { columnContainer, section, sectionTitle } from "../../theme/commonStyles";
+import { columnContainer, section, sectionTitle } from "../../../theme/commonStyles";
 
 export const Container = styled.section`
     ${section};

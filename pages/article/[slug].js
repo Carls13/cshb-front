@@ -6,18 +6,19 @@ export async function getServerSideProps(context) {
     // Remove accents
     const normalizedSlug = slug.normalize("NFD").replace(/[\u0300-\u036f]/g, "")
     // Fetch data from external API
-    const res = await fetch(`https://carlosshb-api.vercel.app/blog/${normalizedSlug}/`);
+    const res = await fetch(`https://api.carlosshb.com/blog/${normalizedSlug}/`);
     const article = await res.json();
-    console.log(article);
 
     // Pass data to the page via props
     return { props: { article: article.body } };
 };
 
 export default function Portfolio(props) {
+    const { article } = props;
+    const { content, title } = article;
     return (
         <>
-            <Head title={`${props?.article?.title}`} />
+            <Head title={title} description={content.split('')[0]} />
             <ArticleView article={props?.article} />
         </>
     );
