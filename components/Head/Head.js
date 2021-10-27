@@ -11,7 +11,7 @@ export const MyHead = ({ title, description }) => {
             <meta property="og:title" content={metaTitle} />
             <meta property="og:url" content="carlosshb.com" />
             <meta property="og:description" content={metaDescription} />
-            <meta property="og:image" content="/logo-black.png" />
+            <meta property="og:image" content="/carlos-about.jpg" />
             <meta property="og:type" content="website" />
             <meta property="og:locale" content="es_ES" />
             <meta name="description" content={metaDescription}/>
