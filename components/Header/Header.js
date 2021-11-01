@@ -3,12 +3,14 @@ import {
     LogoContainer,
     Logo,
     OptionsContainer,
-    Option,
     IconsContainer
 } from './styles';
 
+import { useState } from 'react';
+
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
+
+import { CustomLink } from '../CustomLink/CustomLink';
 
 export const Header = () => {
     const [showMenu, setShowMenu] = useState(false);
@@ -19,9 +21,6 @@ export const Header = () => {
         setShowMenu(false);
     };
 
-    useEffect(() => {
-    }, [showMenu])
-
     return (
         <HeaderContainer>
             <LogoContainer>
@@ -30,24 +29,14 @@ export const Header = () => {
                 </Link>
             </LogoContainer>
             <OptionsContainer onClick={handleLinkClick} showMenu={showMenu}>
-                <Option>
-                    <Link href="/">Inicio</Link>
-                </Option>
-                <Option>
-                    <Link href="/about">Conóceme</Link>
-                </Option>
-                <Option>
-                    <Link href="/portfolio">Portafolio</Link>
-                </Option>
-                <Option>
-                    <Link href="/blog">Blog</Link>
-                </Option>
-                <Option>
-                    <Link href="/contact">Contacto</Link>
-                </Option>
+                <CustomLink route="/">Inicio</CustomLink>
+                <CustomLink route="/about">Conóceme</CustomLink>
+                <CustomLink route="/portfolio">Portafolio</CustomLink>
+                <CustomLink route="/blog">Blog</CustomLink>
+                <CustomLink route="/contact">Contacto</CustomLink>
             </OptionsContainer>
             <IconsContainer>
-                <img src="/burger-menu.svg" alt="" onClick={() => setShowMenu(!showMenu)}/>
+                <img src="/burger-menu.svg" alt="" onClick={() => setShowMenu(!showMenu)} />
             </IconsContainer>
         </HeaderContainer>
     )

@@ -43,16 +43,6 @@ export const LinksContainer = styled.div`
 `;
 
 export const Option = styled.span`
-    cursor: pointer;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    padding: 10px;
-
-    &:hover {
-        background-color: rgba(255, 255, 255, 0.2);
-        border-radius: 10px;
-    }
 `;
 
 export const SocialMediaContainer = styled.div`

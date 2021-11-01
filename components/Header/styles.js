@@ -61,16 +61,6 @@ export const OptionsContainer = styled.div`
 `;
 
 export const Option = styled.span`
-    cursor: pointer;
-    color: white;
-    font-weight: bold;
-    font-size: 22px;
-    padding: 5px;
-
-    &:hover {
-        background-color: rgba(255, 255, 255, 0.2);
-        border-radius: 10px;
-    }
 `;
 
 export const IconsContainer = styled.div`

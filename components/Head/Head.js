@@ -17,6 +17,15 @@ export const MyHead = ({ title, description, image }) => {
             <meta property="og:type" content="website" />
             <meta property="og:locale" content="es_ES" />
             <meta name="description" content={metaDescription}/>
+
+            <meta name="twitter:card" content="sitio"/>
+            <meta name="twitter:site" content="@fromcarlostoyou"/>
+            <meta name="twitter:title" content={metaTitle}/>
+            <meta name="twitter:description" content={metaDescription}/> 
+            <meta name="twitter:creator" content="@fromcarlostoyou"/>
+            <meta name="twitter:image" content={metaImage}/>
+            <meta name="twitter:data1" content="carlosshb.com"/> 
+            <meta name="twitter:label1" content="Fuente"/>
             <link rel="preconnect" href="https://fonts.googleapis.com" />
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
             <link defer href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />

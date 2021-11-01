@@ -1,11 +1,10 @@
-import Link from "next/link";
+import { CustomLink } from "../CustomLink/CustomLink";
 
 import {
     FooterContainer,
     LogoContainer,
     Logo,
     LinksContainer,
-    Option,
     SocialMediaContainer,
     SocialMedia,
     Copyright
@@ -20,19 +19,11 @@ export const Footer = () => {
                 <span>Desarrollador Web</span>
             </LogoContainer>
             <LinksContainer>
-                <Option>
-                    <Link href="/">Inicio</Link>
-                </Option>
-                <Option>Conóceme</Option>
-                <Option>
-                    <Link href="/portfolio">Portafolio</Link>
-                </Option>
-                <Option>
-                    <Link href="/blog">Blog</Link>
-                </Option>
-                <Option>
-                    <Link href="/contact">Contacto</Link>
-                </Option>
+                <CustomLink route="/">Inicio</CustomLink>
+                <CustomLink route="/about">Conóceme</CustomLink>
+                <CustomLink route="/portfolio">Portafolio</CustomLink>
+                <CustomLink route="/blog">Blog</CustomLink>
+                <CustomLink route="/contact">Contacto</CustomLink>
             </LinksContainer>
             <SocialMediaContainer>
                 <SocialMedia target="_blank" href="https://www.instagram.com/carlosshb98/">
