@@ -3,7 +3,7 @@ import Head from 'next/head';
 export const MyHead = ({ title, description, image }) => {
     const metaDescription = description || "Sitio personal de Carlos Hernández, Desarrollador Web.";
     const metaTitle = `${title} | Carlos Hernández`;
-    const metaImage = image || "/carlos-home.jpg";
+    const metaImage = image || "https://carlosshb.com/carlos-home.jpg";
     
     return (
         <Head>
