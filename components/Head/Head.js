@@ -18,7 +18,7 @@ export const MyHead = ({ title, description, image }) => {
             <meta property="og:locale" content="es_ES" />
             <meta name="description" content={metaDescription}/>
 
-            <meta name="twitter:card" content="sitio"/>
+            <meta name="twitter:card" content="summary"/>
             <meta name="twitter:site" content="@fromcarlostoyou"/>
             <meta name="twitter:title" content={metaTitle}/>
             <meta name="twitter:description" content={metaDescription}/> 
