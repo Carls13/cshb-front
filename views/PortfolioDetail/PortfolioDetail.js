@@ -14,12 +14,17 @@ export const PortfolioDetailView = ({ item }) => {
     const { description, link, title, mobileScreenshot, desktopScreenshot } = item;
 
     const subjectMessage = 'Deseo mi página web';
-    const message = `Me gusta mucho tu proyecto ${title}, quiero un sitio similar...`
+    const message = `Me gusta mucho tu proyecto ${title}, quiero un sitio similar...`;
+
+    let screenshot = desktopScreenshot;
+    if (typeof window !== 'undefined') {
+        screenshot = window.screen.width >= 800 ? desktopScreenshot : mobileScreenshot;
+    }
 
     return (
         <Container>
             <Title>{title}</Title>
-            <Image src={window.screen.width >= 800 ? desktopScreenshot : mobileScreenshot} alt={title} title={title} />
+            <Image src={screenshot} alt={title} title={title} />
             <Description>{description}</Description>
             <ButtonLink href={link} target="_blank">Visitar sitio</ButtonLink>
             <ColumnTitle>¿Te gustó este proyecto?</ColumnTitle>
