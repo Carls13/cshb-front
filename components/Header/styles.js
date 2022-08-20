@@ -17,7 +17,6 @@ export const HeaderContainer = styled.header`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 10px;
 
     @media (max-width: 800px) {
         padding: 10px;
@@ -74,4 +73,7 @@ export const IconsContainer = styled.div`
             z-index: 10;
         }
     }
+`;
+
+export const CodementorLink = styled.a`
 `;
