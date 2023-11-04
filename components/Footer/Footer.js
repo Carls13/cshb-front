@@ -32,7 +32,7 @@ export const Footer = () => {
                 <SocialMedia target="_blank" href="https://twitter.com/fromcarlostoyou">
                     <i className="fab fa-twitter"></i>
                 </SocialMedia>
-                <SocialMedia target="_blank" href="https://www.linkedin.com/in/fromcarlostoyou">
+                <SocialMedia target="_blank" href="https://www.linkedin.com/in/carlos-samuel-hern%C3%A1ndez/">
                     <i className="fab fa-linkedin"></i>
                 </SocialMedia>
             </SocialMediaContainer>
