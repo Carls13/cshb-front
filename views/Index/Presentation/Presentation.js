@@ -12,11 +12,15 @@ import {
 export const Presentation = () => {
     const router = useRouter();
 
+    const currentYear = new Date().getFullYear(); 
+
+    const yearsOfExperience = currentYear - 2018;
+
     return (
         <Container>
             <Title>¡Bienvenido!</Title>
-            <Description>Este es el sitio web personal de Carlos Hernández, Desarrollador Web con
-                3+ años de experiencia residenciado en Valencia, Venezuela. Quédate para que puedas
+            <Description>Este es el sitio web personal de Carlos Hernández, Desarrollador Web con 
+                &nbsp;{yearsOfExperience}+ años de experiencia residenciado en Valencia, Venezuela. Quédate para que puedas
                 conocerme un poco más, leerme y ver mi trabajo😁</Description>
             <Row>
                 <Column>
@@ -30,7 +34,7 @@ export const Presentation = () => {
                         Desarrollo productos digitales utilizando tecnologías modernas como React, Next, Node, Express y Python💻
                     </Paragraph>
                     <Paragraph>
-                        Llevo +3 años de experiencia, trabajando tanto de manera freelance como para empresas. También he dado asesorías y tutorías🤓
+                        Llevo {yearsOfExperience}+ años de experiencia, trabajando tanto de manera freelance como para empresas. También he dado asesorías y tutorías🤓
                     </Paragraph>
                     <Paragraph>
                         Gran parte de mi formación se la debo a la educación en línea, principalmente de plataformas como Platzi y Zero to Mastery📚
