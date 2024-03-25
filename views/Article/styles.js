@@ -25,6 +25,6 @@ export const ArticleContainer = styled.div`
     }
 
     a {
-        color: hsl(187.32824427480918, 74.85714285714285%, 54.31372549019608%);
+        color:  #ab071e;
     }
 `;

@@ -11,14 +11,14 @@ export const Title = styled.h1`
 
 export const GridContainer = styled.div`
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     column-gap: 25px;
     row-gap: 20px;
     margin: 30px 0;
 
     article:nth-child(1) {
-        grid-column: 1 / span 2;
-        background-color: hsl(183, 100%, 36%);
+        // grid-column: 1 / span 2;
+        background-color: #ab071e;
     }
 
     article:nth-child(1) h2,
@@ -32,20 +32,20 @@ export const GridContainer = styled.div`
     }
       
     article:nth-child(3) {
-        grid-row: 2;
+        // grid-row: 2;
         color: white;
         background-color: #6c63ff;
     }
       
     article:nth-child(4) {
-        grid-row: 2;
-        grid-column: 2 / span 2;
+        // grid-row: 2;
+        // grid-column: 2 / span 2;
         background-color: hsl(198, 45%, 29%);
     }
     
     article:nth-child(5) {
-        grid-column: 4;
-        grid-row: 1 / span 2;
+        // grid-column: 4;
+        // grid-row: 1 / span 2;
         color: white;
         background-color: #6c63ff;
     }

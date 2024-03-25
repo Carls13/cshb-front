@@ -13,7 +13,7 @@ const appearingMenu = keyframes`
 export const HeaderContainer = styled.header`
     height: auto;
     padding: 10px 40px;
-    background-color: rgba(0, 0, 0, 0.65);
+    background-color: #ffffff11;
     display: flex;
     justify-content: space-between;
     align-items: center;

@@ -24,7 +24,7 @@ export const Presentation = () => {
                 conocerme un poco más, leerme y ver mi trabajo😁</Description>
             <Row>
                 <Column>
-                    <Image src="/carlos-home.jpg" alt="Carlos Hernández" title="Carlos Hernández" />
+                    <Image src="/carlos-home-new.jpg" alt="Carlos Hernández" title="Carlos Hernández" />
                 </Column>
                 <Column>
                     <Paragraph>

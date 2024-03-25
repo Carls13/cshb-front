@@ -28,7 +28,7 @@ export const LocutionDescription = styled.p`
     color: white;
     font-size: 18px;
     text-align: center;
-    font-weight: lighter;
+    font-weight: light;
     margin: 0 10% 10px 10%; 
 `;
 
