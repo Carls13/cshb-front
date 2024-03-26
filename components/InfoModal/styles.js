@@ -47,7 +47,7 @@ export const IconDiv = styled.div`
     font-size: 120px;
     ${props => !props.isError ?
         css`
-        color: #168999;
+        color: #ab071e;
     ` :
         css`
         color: #E6565C;

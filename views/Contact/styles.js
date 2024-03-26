@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { columnContainer, paragraph, rowContainer, section, sectionTitle } from "../../theme/commonStyles";
 
 export const Container = styled.section`
@@ -20,7 +20,7 @@ export const Column = styled.div`
 export const ColumnTitle = styled.h3`
     text-align: center;
     font-size: 28px;
-    font-weight: normal;
+    font-weight: 700;
     color: white;
 `;
 
@@ -32,12 +32,18 @@ export const Image = styled.img`
 
 export const Paragraph = styled.p`
     ${paragraph};
-    width: 80%;
-    font-size: 24px;
-    margin: 10px auto;
+    width: 70%;
+    font-size: 18px;
+    line-height: 20px;
+    margin: 10px 0;
+    ${props => !props.reverse ? css`
+        margin-right: auto;
+    ` : css`margin-left: auto;`}
+    
 
     @media (max-width: 800px) {
         width: 100%;
+        text-align: center;
     }
 `;
 
@@ -113,7 +119,7 @@ export const Button = styled.button`
     margin: 15px auto;
     width: auto;
     padding: 10px 20px;
-    background-color: #168999;
+    background-color: #ab071e;
     border: white;
     color: white;
     border-radius: 6px;

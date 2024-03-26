@@ -15,8 +15,8 @@ export const Column = styled.div`
 
 export const Image = styled.img`
     display: block;
-    width: 80%;
-    margin: auto;
+    width: 70%;
+    margin-right: auto;
     border-radius: 10px; 
 
     @media (max-width: 800px) {

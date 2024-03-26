@@ -11,7 +11,7 @@ export const Title = styled.h1`
 
 export const Description = styled.p`
     ${pageDescription};
-    width: 60%;
+    width: 70%;
     margin: auto;
 `;
 
@@ -31,7 +31,7 @@ export const Column = styled.div`
 export const Image = styled.img`
     display: block;
     width: 70%;
-    margin: auto;
+    margin-left: auto;
     border-radius: 10px; 
 
     @media (max-width: 800px) {

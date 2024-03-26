@@ -60,7 +60,6 @@ export const Summary = styled.p`
     color: white;
     font-size: 18px;
     text-align: left;
-    font-weight: lighter;
     margin: 0;
 
     @media (max-width: 800px) {

@@ -9,16 +9,22 @@ export const Title = styled.h1`
     ${sectionTitle};
 `;
 
+export const ServicesGrid = styled.div`
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+`;
+
 export const Description = styled.p`
     ${pageDescription};
 `;
 
 export const Row = styled.div`
     ${rowContainer};
-    margin: 20px 0;
+    margin: 20px 100px;
 
     @media (max-width: 800px) {
         ${props => props.mobileReverse ? css`flex-direction: column-reverse` : null};
+        margin: 20px 10px;
     }
 `;
 
@@ -30,8 +36,7 @@ export const Column = styled.div`
     }
 
     p { 
-        width: 80%;
-        margin: 0 10%;
+        width: 100%;
 
         @media (max-width: 800px) {
             width: 100%;
@@ -42,7 +47,7 @@ export const Column = styled.div`
 
 export const Image = styled.img`
     display: block;
-    width: 50%;
+    width: 80%;
     margin: auto;
     border-radius: 10px; 
 

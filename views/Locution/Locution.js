@@ -1,18 +1,16 @@
-import { Paragraph } from "../../Contact/styles";
-import { Description, Row } from "../../Index/Presentation/styles";
-import {
-    Container,
-    Title,
-    Column,
-    Image,
-} from "./styles.js";
+import { Image } from "../About/AboutPresentation/styles"
+import { Paragraph } from "../Contact/styles"
+import { Column, Container, Description, Row, Title } from "../Index/Presentation/styles"
+import { PortfolioGrid } from "../Portfolio/styles"
+import { LocutionItem } from "./LocutionItem/LocutionItem"
 
-export const AboutPresentation = () => {
+export const LocutionView = ({ locution }) => {
     return (
+        <>
         <Container>
             <Title>Carlos Samuel Hernández</Title>
             <Description>
-                Conóceme un poco más😎
+                Locutor
             </Description>
             <Row mobileReverse>
                 <Column>
@@ -37,10 +35,25 @@ export const AboutPresentation = () => {
                     </Paragraph>
                 </Column> 
                 <Column>
-                    <Image src="/carlos-about-new.jpg" alt="Carlos Hernández" />
+                    <Image className="" src="/locucion.jpg" alt="Carlos Hernández" />
                 </Column>
             </Row>
-
         </Container>
-    );
-};
+
+        <Container>
+            <Title>Mis creaciones</Title>
+            <Description>
+                Te invito a que escuches mis trabajos de locución🎙️
+            </Description>
+            <PortfolioGrid>
+                {
+                    locution.map((locutionItem, index) => {
+                        return <LocutionItem locutionItem={locutionItem} key={index} />;
+                    })
+                }
+            </PortfolioGrid>
+        </Container>
+        </>
+        
+    )
+}

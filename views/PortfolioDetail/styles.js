@@ -33,7 +33,7 @@ export const ButtonLink = styled.a`
     margin: 15px auto;
     width: auto;
     padding: 10px 20px;
-    background-color: #168999;
+    background-color: #ab071e;
     border: white;
     color: white;
     border-radius: 6px;

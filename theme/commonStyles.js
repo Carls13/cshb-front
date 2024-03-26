@@ -6,7 +6,7 @@ export const section = css`
     padding: 30px;
     margin: 40px;
     border-radius: 20px;
-    background-color: rgba(0, 0, 0, 0.65);
+    background-color: #ffffff11;
 
     @media (max-width: 800px) {
         padding: 15px 10px;
@@ -27,10 +27,9 @@ export const sectionTitle = css`
 `;
 
 export const paragraph = css`
-    text-align: justify;
-    font-size: 18px;
-    font-weight: light;
-    line-height: 24px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
     color: white;
     margin: 10px 0;
 `;
@@ -56,7 +55,7 @@ export const columnContainer = css`
     display: flex;
     flex-direction: column;
     padding: 15px;
-    width: 50%;
+    width: 100%;
 
     @media (max-width: 800px) {
         width: 100%;

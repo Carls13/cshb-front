@@ -6,6 +6,7 @@ import {
     Row,
     Column,
     Image,
+    ServicesGrid,
 } from './styles';
 
 export const Services = () => {
@@ -15,6 +16,7 @@ export const Services = () => {
             <Description>Hoy en día, los sitios web cuentan con ciertas características que les permitirán
                 resaltar frente a competidores y crecer. ¿Cuáles son esas características?
             </Description>
+            {/* <ServicesGrid> */}
             <Row>
                 <Column>
                     <Image src="/website.svg" alt="Diseños modernos" title="Diseños modernos" />
@@ -66,6 +68,7 @@ export const Services = () => {
                     <Image src="/seo.svg" alt="Optimización para motores de búsqueda" title="Optimización para motores de búsqueda" />
                 </Column>
             </Row>
+            {/* </ServicesGrid> */}
         </Container>
     );
 };

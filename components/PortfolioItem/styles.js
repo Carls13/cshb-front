@@ -33,7 +33,6 @@ export const Description = styled.p`
     color: white;
     font-size: 18px;
     text-align: center;
-    font-weight: lighter;
     margin: 0 10% 10px 10%; 
 `;
 
