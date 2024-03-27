@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="47" height="47" viewBox="0 0 47 47">
+  <defs>
+    <filter id="Elipse_57" x="0" y="0" width="47" height="47" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Grupo_1199" data-name="Grupo 1199" transform="translate(-789 -2181)">
+    <g transform="matrix(1, 0, 0, 1, 789, 2181)" filter="url(#Elipse_57)">
+      <circle id="Elipse_57-2" data-name="Elipse 57" cx="14.5" cy="14.5" r="14.5" transform="translate(9 6)" fill="#eee"/>
+    </g>
+    <path id="Icon_awesome-arrow-right" data-name="Icon awesome-arrow-right" d="M6.9,3.706l.8-.8a.865.865,0,0,1,1.228,0l7.039,7.036a.865.865,0,0,1,0,1.228L8.929,18.2a.865.865,0,0,1-1.228,0l-.8-.8a.87.87,0,0,1,.014-1.242L11.276,12H.869A.867.867,0,0,1,0,11.133V9.974a.867.867,0,0,1,.869-.869H11.276L6.912,4.948A.864.864,0,0,1,6.9,3.706Z" transform="translate(820.224 2212.46) rotate(180)" fill="#4480d9"/>
+  </g>
+</svg>

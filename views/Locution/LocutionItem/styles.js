@@ -8,6 +8,7 @@ export const LocutionItemContainer = styled.div`
     border-radius: 8px;
     box-shadow: 1px 2px 10px 5px rgba(0, 0, 0, 0.4);
     background-color: #ffffff22;
+    width: 100%;
 
     audio {
         display: block;
