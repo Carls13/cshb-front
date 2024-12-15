@@ -1,14 +1,18 @@
+import { useRouter } from "next/router";
 import { GlobalStyles } from "../../theme/GlobalStyles";
 import { Footer } from "../Footer/Footer";
 import { Header } from "../Header/Header";
 
-export const Layout = ({ children, isLocution }) => {
+export const Layout = ({ children }) => {
+    const router = useRouter();
+    const isEbook = router.pathname === '/ebook';
+
     return (
         <>
             <GlobalStyles />
-            <Header />
+            {!isEbook && <Header />}
             {children}
-            <Footer />
+            {!isEbook && <Footer />}
         </>
     )
 };
