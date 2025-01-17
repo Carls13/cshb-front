@@ -7,7 +7,7 @@ export const EbookView = () => {
       <Hero>
         <h1>Transforma tu futuro con la tecnología</h1>
         <p>Descubre cómo desarrollar habilidades clave para abrirte camino en la industria tech</p>
-        <CTAButton href="#cta">¡Quiero mejorar mi vida!</CTAButton>
+        <CTAButton href="#https://7988392975733.gumroad.com/l/hpuhp">¡Quiero mejorar mi vida!</CTAButton>
       </Hero>
 
       <Section>
@@ -72,7 +72,7 @@ export const EbookView = () => {
       <FAQSection />
       <CTA id="cta">
         <h2>Empieza hoy a construir tu mejor versión</h2>
-        <CTAButton href="#">¡Quiero el ebook ahora!</CTAButton>
+        <CTAButton href="https://7988392975733.gumroad.com/l/hpuhp">¡Quiero el ebook ahora!</CTAButton>
       </CTA>
     </>
   );
