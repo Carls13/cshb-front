@@ -76,7 +76,12 @@ const FAQData = [
     {
       question: '¿Cómo puedo adquirir el ebook y cuál es su precio?',
       answer:
-        'Puedes adquirir el ebook directamente en nuestra plataforma. Una vez completado el pago, recibirás un enlace de descarga. El precio actual es competitivo y ocasionalmente ofrecemos promociones especiales.',
+        'Puedes adquirir el ebook directamente en nuestra plataforma. Una vez completado el pago, recibirás un enlace de descarga. El precio actual (15 USD) es competitivo y ocasionalmente ofrecemos promociones especiales.',
+    },
+    {
+      question: '¿Qué puedo hacer si tengo un método de pago diferente?',
+      answer:
+        'Contáctame por Instagram para que puedas realizar un pago personalizado y yo personalmente te haré llegar el ebook.',
     },
   ];
 export default function FAQSection() {

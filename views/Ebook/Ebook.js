@@ -1,9 +1,10 @@
 import FAQSection from './FAQSection/FAQSection';
-import { Hero, Section, CTA, CTAButton, TimelineSection, TimelineLine, TimelineItem  } from './styles';
+import { Hero, Section, CTA, CTAButton, TimelineSection, TimelineLine, TimelineItem, Video  } from './styles';
 
 export const EbookView = () => {
   return (
     <>
+      <Video autoPlay={true} muted={true} src='/presentacion.mp4' controls={true} />
       <Hero>
         <h1>Transforma tu futuro con la tecnología</h1>
         <p>Descubre cómo desarrollar habilidades clave para abrirte camino en la industria tech</p>

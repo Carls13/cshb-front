@@ -1,5 +1,18 @@
 import styled from "styled-components";
 
+export const Video = styled.video`
+  display: block;
+  margin: auto;
+  max-height: 100vh;
+  border: 5px solid black;
+  
+
+  @media (max-width: 600px) {
+    max-width: 100%;
+    max-height: unset;
+    }
+`;
+
 export const Hero = styled.header`
   text-align: center;
   background: #ab071e;
@@ -120,6 +133,11 @@ export const TimelineLine = styled.div`
   height: 590px;
   width: 2px;
   background: #ab071e;
+
+  @media (max-width: 1000px) {
+    top: 110px;
+    height: 700px;
+  }
 
   @media (max-width: 600px) {
     top: 150px;
