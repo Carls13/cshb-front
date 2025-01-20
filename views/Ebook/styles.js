@@ -31,6 +31,7 @@ export const CTAButton = styled.a`
   border-radius: 5px;
   font-weight: bold;
   border: 2px solid white;
+  font-family: Jost;
 
   &:hover {
     background: #ab071e44;

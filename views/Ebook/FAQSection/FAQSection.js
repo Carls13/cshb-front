@@ -84,6 +84,7 @@ const FAQData = [
         'Contáctame por Instagram para que puedas realizar un pago personalizado y yo personalmente te haré llegar el ebook.',
     },
   ];
+  
 export default function FAQSection() {
   return (
     <FAQSectionWrapper>

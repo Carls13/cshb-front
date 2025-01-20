@@ -1,3 +1,4 @@
+import ChapterOnePreview from './ChapterOnePreview/ChapterOnePreview';
 import FAQSection from './FAQSection/FAQSection';
 import { Hero, Section, CTA, CTAButton, TimelineSection, TimelineLine, TimelineItem, Video  } from './styles';
 
@@ -25,6 +26,8 @@ export const EbookView = () => {
           <li>Recibirás consejos prácticos para combinar aprendizaje y desarrollo personal.</li>
         </ul>
       </Section>
+
+      <ChapterOnePreview/>
 
       <Section>
         <h2>Una guía basada en experiencia real</h2>
